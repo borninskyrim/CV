@@ -25,6 +25,7 @@ body{
     margin-right: auto;
     margin-bottom: 45px;
 }
+
 .info{
     text-align: center;
 }
@@ -81,8 +82,9 @@ body{
 }
 
 .bio{
-    width: 530px;
-    height: 483px;
+    width: 830px;
+    height: 583px;
+    font-size: 30.86px;
      
 }
 .contact{
@@ -176,8 +178,13 @@ ul.progress-bar {
     font-size: 51.44px;
     text-transform: uppercase;
 }
+.education-item{
+    width: 830px;
+    height: 500px;
+}
 .description{
     font-size: 30.86px;
+
 }
 .jobs__head:before{
     background-image: url("img/EXPERIENCE.png");
