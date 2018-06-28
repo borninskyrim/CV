@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Myriad_Pro';
+    src: url('font/MyriadProLightSemiExtended.ttf');
+    
+}
+body{
+  
+    font-family: "Myriad_Pro", sans-serif;
+}
+.person{
+    width: 920px;
+    height: 920px;
+    display: block;
+}
+.photo{
+    background-color: #3d6cb0;
+    border: 5px solid #ffffff, 1px solid #3d6cb0;
+    width: 45%;
+    height: 45%;
+   
+    box-shadow: #ffffff 0 0 0  27px,
+        #3d6cb0 0 0 0  30px;
+     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+}
+.info{
+    text-align: center;
+}
+.name {
+    font-size: 105px;
+    font-weight:100;
+}
+.surname{
+    font-weight: bold;
+    font-size: 123.5px;
+}
+.occupation{
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.profile{
+    
+    
+}
+.block-head{
+   
+    color:#3d6cb0;
+    font-size: 82.3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.block-head::before{
+    content: "";
+   
+   background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 149px;
+    min-height: 149px;
+    margin-right: 40px;
+   
+    
+}
+.block-head:after{
+    content: "";
+    border-bottom:10px solid   #3d6cb0;
+    display: inline-block;
+     vertical-align: middle;
+    min-width: 150px;
+    margin-top: -19px;
+   
+    
+}
+.profile__head::before{
+    background-image: url(img/PROFILE.png);
+    
+}
+
+.bio{
+    width: 530px;
+    height: 483px;
+     
+}
+.contact{
+    max-height: 600px;
+    height: 600px;
+}
+.contact__head:before{
+    background-image: url("img/PHONE.png");
+}
+.contact-data{
+}
+li{
+    list-style: none;
+}
+.contact-data__head{
+    color:#3d6cb0;
+    font-size: 41.15px;
+    font-weight: bold;
+    line-height: 75px;
+     display: inline-block;
+    text-transform: uppercase;
+}
+.contact-data_content{
+    font-size: 41.15px;
+    line-height: 75px;
+     display: inline-block;
+}
+.skills__head:before{
+    background-image: url("img/SKILLS.png");
+}
+ul.progress-bar {
+    width: 650px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden; 
+}
+.progress_bars{
+    display: inline-block;
+     
+    text-align: center;
+}
+ .skill_names{
+    font-size:51.44px;
+    text-transform: uppercase;
+
+}
+.progress-bar li {
+        background: #3d6cb0;
+        border-radius: 100px;
+        width: 38px;
+        height: 38px;
+        z-index: 1;
+        margin-left: 5px;
+        position: relative;
+  
+        
+    }
+.stop ~ li {
+    background: #e6e6e6;  
+    }
+.education__head:before{
+    background-image: url("img/EDUCATION.png");
+}
+.diploma{
+    font-size: 51.44px;
+    text-transform: uppercase;
+    color:#3d6cb0;
+    font-weight: bold;
+}
+.diploma:before{
+    content: "";
+    border: 2px solid black;
+    background-color: black;
+    min-width: 41px;
+    min-height: 41px;
+     display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.date{
+    font-size: 51.44px;
+    margin-left: 40px;
+}
+.university{
+    font-size: 51.44px;
+    text-transform: uppercase;
+}
+.description{
+    font-size: 30.86px;
+}
+.jobs__head:before{
+    background-image: url("img/EXPERIENCE.png");
+    width:153px;
+}  
+.job__name{
+    color:black;
+}
+.soft__head:before{
+    background-image: url("img/SOFTWARE.png")
+    
+}
+.program{
+    font-size: 51.44px;
+    text-transform: uppercase;
+    width: 555px;
+    border-bottom: 50px solid transparent;
+   
+    
+}
+.ps{
+    border-image: linear-gradient(to right,#3d6cb0 90%,#e6e6e6 90%) 1 100%;
+     border-image-slice: 1;
+}
+.illustrator{
+    border-image: linear-gradient(to right,#3d6cb0 70%,#e6e6e6 70%) 1 100%;
+     border-image-slice: 1;
+}
+.idesign{
+    border-image: linear-gradient(to right,#3d6cb0 55%,#e6e6e6 55%) 1 100%;
+     border-image-slice: 1;
+}
+.drewmweaver{
+    border-image: linear-gradient(to right,#3d6cb0 75%,#e6e6e6 75%) 1 100%;
+     border-image-slice: 1;
+}
+.ae{
+    border-image: linear-gradient(to right,#3d6cb0 65%,#e6e6e6 65%) 1 100%;
+     border-image-slice: 1;
+}
+.htmlcss{
+    border-image: linear-gradient(to right,#3d6cb0 85%,#e6e6e6 85%) 1 100%;
+     border-image-slice: 1;
+}
