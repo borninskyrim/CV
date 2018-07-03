@@ -19,8 +19,11 @@
     font-weight: lighter;
 }
 
+$mainsize: black;
+
 html {
     font-size: 23.9px;
+
 }
 
 * {
@@ -67,7 +70,7 @@ body {
 
 .block-head {
     color: #3d6cb0;
-    font-size: 2.666em;
+    font-size: 3.95em;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
@@ -88,41 +91,79 @@ body {
     border-bottom: 10px solid #3d6cb0;
     align-items: center;
     flex-grow: 1;
+    margin-left: 12px;
+}
+
+.profile__head {
+    padding-top: 40px;
+    padding-left: 130px;
+    position: relative;
+
 }
 
 .profile__head::before {
     background-image: url("img/PROFILE%20.png");
+    position: absolute;
+    top: 31px;
+    left: 1px;
+    font-size: 0.9em;
 }
 
 .contact__head:before {
     background-image: url("img/PHONE.png");
+
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    font-size: 0.88em;
 }
 
 .skills__head:before {
     background-image: url("img/SKILLS.png");
+
+    position: absolute;
+    top: -6px;
+    left: 1px;
+    font-size: .88em;
 }
 
+
+
 .education__head:before {
-    background-image: url("img/EDUCATION%20.png");
+    background-image: url(img/EDUCATION%20.png);
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    font-size: 0.9em;
 }
 
 .jobs__head:before {
-    background-image: url("img/EXPERIENCE%20.png");
+    background-image: url(img/EXPERIENCE%20.png);
+    position: absolute;
+    top: -14px;
+    left: -9px;
+    font-size: 0.93em;
 }
 
 .soft__head:before {
-    background-image: url("img/SOFTWARE%20.png")
+    background-image: url(img/SOFTWARE%20.png);
+    position: absolute;
+    top: -14px;
+    left: -8px;
+    font-size: 0.9em;
 }
 
 /* Prson section block */
 
 .photo {
     background-color: #3d6cb0;
-    width: 360px;
-    height: 360px;
+    width: 356px;
+    height: 356px;
     box-shadow: inset #ffffff 0 0 0 20px, #3d6cb0 0 0 0 2px;
     border-radius: 50%;
     margin: 0% auto;
+    margin-left: 156px;
+    margin-top: 2px;
 }
 
 .info p {
@@ -137,16 +178,29 @@ body {
 }
 
 .name {
-    font-size: 3.3849em;
-    font-weight: 300 !important;
+    font-size: 5.1em;
+    font-weight: 400 !important;
+    margin-left: 0px;
 }
 
 .surname {
-    font-size: 3.9991em;
+    font-size: 6em;
+    margin-left: 4px;
+    margin-top: 11px;
 }
 
 .occupation {
-    font-size: 1, 6188em;
+    font-size: 2.33em;
+    margin-left: 15px;
+    margin-top: 14px;
+}
+
+p.bio {
+    font-size: 1.5em;
+    padding-top: 33px;
+    line-height: 29px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
 }
 
 .profile {
@@ -165,21 +219,28 @@ body {
 
 .contact-data__head {
     color: #3d6cb0;
-    font-size: 1.333em;
+    font-size: 2em;
     font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 22px;
 }
 
 .contact-data_content {
-    font-size: 1.333em;
+    font-size: 2em;
     display: inline-block;
     margin-left: 65px;
 }
 
-.contact-data__head li, .contact-data_content li {
+.contact-data__head li,
+.contact-data_content li {
     margin-top: 42px;
+}
+
+.block-head.contact__head {
+    padding-left: 132px;
+    position: relative;
+    padding-top: 5px;
 }
 
 /* Skillst section block*/
@@ -190,48 +251,64 @@ body {
 
 ul.skill-progress_bar {
     list-style: none;
-    margin: 0;
-    padding: 0;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
+    margin-bottom: 27px;
 }
+
 
 .skill-progress_bars {
     display: inline-block;
     text-align: center;
-    margin: 0 10%;
+    margin: 0 10.3%;
+    margin-top: 49px;
 }
 
+
 .skill_names {
-    font-size: 1.665em;
+    font-size: 2.5em;
     text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    font-weight: normal;
+    margin-bottom: 13px;
+    margin-left: 8px;
 }
 
 .skill-progress_bar li {
     background: #3d6cb0;
     border-radius: 50%;
-    width: 27px;
-    height: 27px;
-    margin: 0 7px;
+    width: 26px;
+    height: 26px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
-.stop~li {
+.stop ~ li {
     background: #e6e6e6;
+}
+
+.block-head.skills__head {
+    position: relative;
+    padding-left: 128px;
+    padding-top: 3px;
 }
 
 /* Education section block*/
 
+.education-items {
+    margin-top: 54px;
+    margin-left: 11px;
+}
+
 .diploma {
-    font-size: 1.665em;
+    font-size: 2.5em;
     text-transform: uppercase;
     color: #3d6cb0;
     font-weight: bold;
+    position: relative;
+    padding-left: 62px;
 }
 
 .diploma:before {
@@ -241,32 +318,50 @@ ul.skill-progress_bar {
     height: 31px;
     display: inline-block;
     border-radius: 50%;
-    margin-right: 30px;
+    position: absolute;
+    top: 14px;
+    left: -1px;
 }
 
 .university {
-    font-size: 1.665em;
+    font-size: 2.5em;
     text-transform: uppercase;
     word-break: keep-all;
-    font-weight: bold;
-    margin-left: 65px;
+    font-weight: normal;
+    margin-left: 60px;
+    margin-top: 0px;
 }
 
-.diploma span, .university span {
+.diploma span,
+.university span {
     font-size: 1em;
     color: black;
     font-weight: normal;
     text-transform: none;
+    margin-left: 22px;
 }
 
 .description {
-    font-size: 1em;
-    margin-left: 67px;
-    margin-top: 6px;
-    margin-bottom: 11px;
+    font-size: 1.49em;
+    margin-left: 64px;
+    padding-top: 7px;
+    padding-bottom: 14px;
+    line-height: 29px;
+}
+
+.block-head.education__head {
+    position: relative;
+    padding-left: 136px;
+    padding-top: 9px;
 }
 
 /*jobs section block*/
+
+.block-head.jobs__head {
+    position: relative;
+    padding-left: 137px;
+    margin-top: -7px;
+}
 
 .jobs {
     margin-top: 85px;
@@ -276,19 +371,32 @@ ul.skill-progress_bar {
     color: black;
 }
 
+.job-item {
+    margin-left: 10px;
+    margin-top: 77px;
+}
+
+.job__name span {
+    margin-left: 33px;
+}
+
 /*software section block*/
+
+.block-head.soft__head {
+    position: relative;
+    padding-left: 137px;
+}
 
 .programs {
     margin-top: 81px;
 }
 
 .program {
-    font-size: 1.665em;
+    font-size: 2.5em;
     text-transform: uppercase;
     width: 428px;
     border-bottom: 34px solid transparent;
-    margin-top: 45px;
-    padding-bottom: 17px;
+
 }
 
 .ps {
@@ -321,69 +429,193 @@ ul.skill-progress_bar {
     border-image-slice: 1;
 }
 
-.soft_left {
-    
-    float: left;
+.drewmweaver,
+.ps {
+
+    margin-top: 48px;
+    margin-left: 1px;
+    padding-bottom: 20px;
 }
+
+.ae,
+.illustrator {
+
+    margin-top: 31px;
+    padding-bottom: 17px;
+}
+
+.htmlcss,
+.idesign {
+    margin-top: 31px;
+    padding-bottom: 13px;
+}
+
+.soft_left {
+    float: left;
+    margin-left: 1px;
+}
+
 
 .soft_right {
-    
     float: right;
+    margin-right: 13px;
 }
 
-@media (max-width: 720px) {
+
+
+
+
+@media (max-width:720px) {
+
     body {
         width: 100%;
         font-size: 16px;
+
     }
-    .bleft, .bright, .soft_left, .soft_right {
+    .block {
         width: 100%;
         margin: 0;
+        padding: 0;
+    }
+    .bleft,
+    bright {
+        width: 100%;
+        margin: 0 0;
+        padding: 0 0;
         float: left;
     }
-    .soft_left, .soft_right {
-        margin: 0 7%;
-    }
     .photo {
-        width: 200px;
-        height: 200px;
+        margin: 0 auto;
+    }
+
+    p.bio {
+        font-size: 1em;
+        margin: 0 5%;
+        line-height: 17px;
+        margin-bottom: 10%;
+    }
+
+    .contact-data__head,
+    .contact-data_content {
+        font-size: 1.5em;
     }
     .skill-progress_bars {
+        width: 90%;
+        margin: 5% 5%;
+    }
+    .skill_names {
+        font-size: 2em;
+    }
+
+    .skill-progress_bar li {
+        background: #3d6cb0;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0;
+    }
+    .skill-progress_bar{
+        margin: 0 10%;
+    }
+    .profile__head::before {
+        font-size: 0.8em;
+        padding: 27px 0px;
+        margin: 0 0;
+        position: relative;
+    }
+    .profile__head {
+        margin: 0 0;
+        padding: 00;
+        font-size: 3em;
+    }
+    .contact,
+    .contact-data {
         width: 100%;
         margin: 0;
     }
-    .skill-progress_bar li {
-        width: 20px;
-        height: 20px;
-        margin: 0 0;
+    
+    .block,
+    .bleft,
+    .bright {
+        border: 1px solid black;
     }
-    ul.skill-progress_bar {
-        margin: 0 15%;
+
+    .contact__head:before {
+        font-size: 0.8em;
+        position: relative;
+        top: 0;
     }
-    .block-head {
-        width: 100%;
+    .contact__head {
+        margin-left: -132px;
+        padding: 0 0;
+        font-size: 3em;
+    }
+
+    .skills__head:before {
+        font-size: 0.8em;
+        position: relative;
+        top: 0;
+    }
+    .skills__head {
+        margin-left: -128px;
+        font-size: 3em;
+    }
+    .education__head:before {
+        font-size: 0.8em;
+        position: relative;
+    }
+    .education__head {
+        margin-left: -124px;
+        font-size: 3em;
+    }
+
+    .jobs__head:before {
+        font-size: 0.8em;
+        position: relative;
+        top: 0;
+    }
+    .jobs__head {
+        margin-left: -124px;
+        font-size: 3em;
+    }
+
+    .soft__head:before {
+        font-size: 0.8em;
+        position: relative;
+        top: 0;
+    }
+    .soft__head {
+        margin-left: -124px;
+        font-size: 3em;
+    }
+    .contact-data{
+        padding: 0 10%;
+    }
+    .diploma span{
+        font-size:.9em;
+       
+        
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    .diploma{
+        font-size: 2,5em;
+        float:left;
+    }
+    .description{
+        font-size: 1.5em;
+    }
+    .soft_left, .soft_right{
+        float:left;
+        margin: 0 5%;
+        width: 90%;
+    }
+    .soft_right{
+        margin-bottom: 10%;
     }
     .program{
-        margin: 0 20px;
-        border-width: 30px;
-        width: 80%
-    }
-}
-
-@media (max-width: 320px) {
-    .skill-progress_bars {
-        width: 100%;
-        margin: 0;
-    }
-    .skill-progress_bar li {
-        width: 15px;
-        height: 15px;
-        margin: 0 0;
-    }
-    ul.skill-progress_bar {
-        margin: 0 5%;
-    }
-    .block-head {
         width: 100%;
     }
+    
 }
