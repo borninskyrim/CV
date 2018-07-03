@@ -466,26 +466,31 @@ ul.skill-progress_bar {
 
 
 @media (max-width:720px) {
-
+    * {
+        padding: 0 !important;
+    }
     body {
         width: 100%;
         font-size: 16px;
+
 
     }
     .block {
         width: 100%;
         margin: 0;
-        padding: 0;
+
+        float: left;
     }
     .bleft,
     bright {
         width: 100%;
         margin: 0 0;
-        padding: 0 0;
+
         float: left;
     }
     .photo {
         margin: 0 auto;
+
     }
 
     p.bio {
@@ -493,6 +498,7 @@ ul.skill-progress_bar {
         margin: 0 5%;
         line-height: 17px;
         margin-bottom: 10%;
+
     }
 
     .contact-data__head,
@@ -501,7 +507,8 @@ ul.skill-progress_bar {
     }
     .skill-progress_bars {
         width: 90%;
-        margin: 5% 5%;
+        margin: 15% 5%;
+
     }
     .skill_names {
         font-size: 2em;
@@ -514,7 +521,7 @@ ul.skill-progress_bar {
         height: 24px;
         margin: 0;
     }
-    .skill-progress_bar{
+    .skill-progress_bar {
         margin: 0 10%;
     }
     .profile__head::before {
@@ -524,30 +531,24 @@ ul.skill-progress_bar {
         position: relative;
     }
     .profile__head {
-        margin: 0 0;
-        padding: 00;
         font-size: 3em;
     }
-    .contact,
+
     .contact-data {
-        width: 100%;
+        width: 85%;
         margin: 0;
-    }
-    
-    .block,
-    .bleft,
-    .bright {
-        border: 1px solid black;
+        margin-left: 15%;
+        margin-bottom: 5%;
     }
 
     .contact__head:before {
         font-size: 0.8em;
+
         position: relative;
         top: 0;
+
     }
     .contact__head {
-        margin-left: -132px;
-        padding: 0 0;
         font-size: 3em;
     }
 
@@ -557,15 +558,17 @@ ul.skill-progress_bar {
         top: 0;
     }
     .skills__head {
-        margin-left: -128px;
+
         font-size: 3em;
     }
     .education__head:before {
         font-size: 0.8em;
         position: relative;
+        margin-left: 10px;
+
     }
     .education__head {
-        margin-left: -124px;
+
         font-size: 3em;
     }
 
@@ -575,7 +578,7 @@ ul.skill-progress_bar {
         top: 0;
     }
     .jobs__head {
-        margin-left: -124px;
+        margin-left: 10px;
         font-size: 3em;
     }
 
@@ -585,37 +588,41 @@ ul.skill-progress_bar {
         top: 0;
     }
     .soft__head {
-        margin-left: -124px;
+        margin-left: 10px;
         font-size: 3em;
     }
-    .contact-data{
+    .contact-data {
         padding: 0 10%;
     }
-    .diploma span{
-        font-size:.9em;
-       
-        
+    .diploma span {
+        font-size: .9em;
         display: inline-block;
-        padding: 0;
-        margin: 0;
+        margin-left: 55px
     }
-    .diploma{
-        font-size: 2,5em;
-        float:left;
+    .diploma {
+        font-size: 2, 5em;
+        float: left;
+
     }
-    .description{
+    .diploma:before {
+        position: relative;
+        top: 0;
+        margin-right: 25px;
+    }
+    .description {
         font-size: 1.5em;
     }
-    .soft_left, .soft_right{
-        float:left;
+    .soft_left,
+    .soft_right {
+        float: left;
         margin: 0 5%;
         width: 90%;
     }
-    .soft_right{
+    .soft_right {
         margin-bottom: 10%;
     }
-    .program{
+    .program {
         width: 100%;
     }
-    
+
 }
